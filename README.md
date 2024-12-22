@@ -64,7 +64,10 @@ Ensure you have the following installed:
    # or
    yarn install
    ```
-
+3. **Run Server**:
+   ```bash
+   npm run dev
+   ```
 
 4. Open your browser and navigate to `http://localhost:5173`.
 
