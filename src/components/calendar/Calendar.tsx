@@ -53,7 +53,6 @@ export function Calendar() {
   //
   //   setAllDays(getEventsForDate)
   // }, [selectedDate]);
-  //
 
 
   const handleEventDrop = (date: Date, event:any) => {
