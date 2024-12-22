@@ -84,7 +84,7 @@ The build files will be available in the `build/` directory.
 
 The application is deployed on Vercel. You can view the live application using the link below:
 
-[Live Demo](<deployed-link>)
+[Live Demo](<https://dynamic-event-calendar-application-ei7y.vercel.app/>)
 
 To deploy yourself:
 1. Create an account on [Vercel](https://vercel.com/).
