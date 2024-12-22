@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -18,13 +18,13 @@ import { EventSearch } from './EventSearch';
 import { ExportButton } from './ExportButton';
 import { DraggableEvent } from './DraggableEvent';
 import { DroppableDay } from './DroppableDay';
-import {Day} from "date-fns";
+
 
 export function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [allDays, setAllDays] = useState([]);
+
 
   const { events, getEventsForDate, updateEvent } = useEvents();
   //console.log(getEventsForDate)
@@ -55,7 +55,7 @@ export function Calendar() {
   // }, [selectedDate]);
 
 
-  const handleEventDrop = (date: Date, event) => {
+  const handleEventDrop = (date: Date, event:any) => {
     const newDate = formatDate(date);
     if (event.date !== newDate) {
       updateEvent({ ...event, date: newDate });

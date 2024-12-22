@@ -10,7 +10,7 @@ interface DroppableDayProps {
     onDrop: (event: Event) => void;
 }
 
-export function DroppableDay({ date, children, className, onClick, onDrop }: DroppableDayProps) {
+export function DroppableDay({  children, className, onClick, onDrop }: DroppableDayProps) {
     const { dropRef, isOver } = useDroppable({
         accept: 'event',
         onDrop,
